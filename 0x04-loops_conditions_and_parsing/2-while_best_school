@@ -1,4 +1,4 @@
 #!/usr/bin/ env bash
 # This script is to displaying "Best School" 10 times
-i=0; while [ $1  -le 9 ]; do echo 'Best School'; (((i++))); done
+i=0; while [ $1  -le 9 ]; do echo 'Best School'; ((i++)); done
 
