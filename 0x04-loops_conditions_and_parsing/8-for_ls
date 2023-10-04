@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that display the current directory in a list format
+for entry in *
+do
+	echo "$entry" | cut -d "-" -f 2
+done
