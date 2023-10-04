@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script that display "ALX SCHOOL" 10 TIMES
+file_h="apache-access.log"
+awk -F' ' '{ print $1, $9}' $file_h
