@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Bash script that display 1-100 at multiple 15 'fizzbuzz' 3 'fizz' 5 'buzz'
-i=0
+i=1
 while [ $i -le 100 ] 
 do
 	if [ $((i % 15)) == 0 ];
