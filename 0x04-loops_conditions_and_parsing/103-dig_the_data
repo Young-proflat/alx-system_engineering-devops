@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script is to displaying "Horberton School" 10times
-file_h="apache-access.log"
-awk -F' ' '{ print $1, $9}' $file_h | sort | uniq -c| sort -nr
+
+awk '{ print $1, $9}' apache-access.log | sort | uniq -c| sort -r 
