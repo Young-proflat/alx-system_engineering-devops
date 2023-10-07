@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#Bash script that create a file "var/run/myscript.pid"
+#Receiving a SIGTERM signal from PID "I have the kill command"
+#REceiving Y U no love me?! signal SIGINT
+
+file="/var/run/myscript.pid"
+if [ ! -e "$file" ]; then
+	touch "$file"
+ f1
+
+sleep 2 &
+
+echo "$!" > "$file"
+
+#if the file receives signal delete the file
+trap 'echo "I hate the kill command"; rm "$file"; exit' SIGTERM
+
+#when receiving another command to be executed
+trap 'echo Y U no love me?!' SIGINT
+
+#Create a Infinity loop using the while loop
+while true; do
+	echo 'To inifinty and beyond'
+	sleep 2
+done
