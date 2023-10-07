@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #Bash script that display To infinty and beyond
-# Receiving a SIGTERM signal
-
-trap 'echo To infinity and beyond!!!!' SIGTERM
+# Receiving a SIGTERM signal 
+trap "echo 'I am invincible!!!': exit" SIGTERM
+while :; do
+	echo "To infinity and beyond indefinitely"
+	sleep 2
+done
