@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Bash script that configures the server in localhost 
-cp -f `/etc/hosts /etc/hosts.new
+cp -f ~ /etc/hosts	/etc/hosts.new
 echo "localhost		127.0.0.2" > /etc/hosts
-cp-f `/etc/hosts.new	/etc/hosts
+cp -f ~/etc/hosts.new	/etc/hosts
