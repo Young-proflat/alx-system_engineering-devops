@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-""" scirpt that displays port that listens """"
+# scirpt that displays port that listens
 netstat -lp
